@@ -25,8 +25,8 @@ EC2 Security Group:
 ## End Result 
 After setting everything up:
 - I accessed the ALB DNS name in a browser (e.g., http://alb-name-123456.eu-west-2.elb.amazonaws.com) and saw the simple Apache web page served from one of the EC2 instances.
-- When refreshing, traffic alternated between the two instances (load balancing).
-- Health checks ensured that only healthy EC2 instances received traffic.
+- Traffic alternates between the two instances (load balancing).
+- Health checks ensured that only healthy EC2 instances receive traffic.
 - The architecture is redundant, secure, and scalable.
 
 
