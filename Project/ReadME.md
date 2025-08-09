@@ -17,7 +17,7 @@ During ALB creation:
 ## Security Groups
 
 ALB Security Group:
-- Created a Security Group for the ALB that allows inbound HTTP (port 80) from anywhere (0.0.0.0/0). This ensures that the internet can reach the ALB
+Created a Security Group for the Application Load Balancer (ALB) that allows inbound HTTP (port 80) and HTTPS (port 443) traffic from anywhere (0.0.0.0/0), ensuring the ALB is reachable over both protocols. Attached an HTTPS listener to the ALB to securely handle incoming encrypted traffic.
 
 EC2 Security Group:
 - Created a Security Group for the EC2 instances that only allows inbound HTTP (port 80) from the ALB's security group (using the ALB SG ID as the source). This ensures the EC2 instances are not directly accessible from the internet, and only traffic routed through the ALB can reach them.
